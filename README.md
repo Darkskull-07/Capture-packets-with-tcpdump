@@ -14,6 +14,7 @@ command -> $ tcpdump -c 10 -i any
 * -i specifies interface to listen
 # Task 3 Suppressed host name resolution and port name resolution
 command -> $ tcpdump -c 10 -i eth0 -nn
+*The -nn option ensures that IP addresses and protocol numbers are not resolved, which can help speed up the process by avoiding DNS lookups and protocol number resolutions
 #  Task 4 Capture traffic from host
 command -> $ tcpdump -c 10 host 192.168.XXX.XXX
 * This command provides packet traffic of specified host
